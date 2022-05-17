@@ -1,0 +1,133 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #171717;
+}
+
+body {
+  padding: 5rem 0;
+  background: linear-gradient(125deg, #1f1b1b 0%, #f5bb6a 100%);
+  min-height: 100vh;
+}
+
+.container {
+  width: 540px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(125deg, #5effc9 0%, #45c2fc 100%);
+  padding: 2rem 1rem;
+  border-radius: 35px;
+  -webkit-box-shadow: 0px 10px 30px 0px #3f3f3f;
+          box-shadow: 0px 10px 30px 0px #3f3f3f;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  font-size: 2.35rem;
+  text-shadow: -1px 3px 2px #1f1b1b;
+}
+
+.container form {
+  margin: 2rem 0;
+}
+
+.container form input {
+  width: 250px;
+  height: 50px;
+  border-radius: 50px;
+  padding: 0 1rem;
+  border: 2px solid #1f1b1b;
+  font-size: 1.3rem;
+  background: linear-gradient(125deg, #1f1b1b 0%, #f5bb6a 100%);
+  color: #5effc9;
+  -webkit-box-shadow: 0px 2px 10px 0px #3f3f3f;
+          box-shadow: 0px 2px 10px 0px #3f3f3f;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.container form input::-webkit-input-placeholder {
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+.container form input:-ms-input-placeholder {
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+.container form input::-ms-input-placeholder {
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+.container form input::placeholder {
+  color: whitesmoke;
+  opacity: 0.4;
+}
+
+.container form input:focus {
+  border: 3px solid #ffee00;
+}
+
+.container ul {
+  text-align: left;
+}
+
+.container ul li {
+  list-style: none;
+  padding: 0.7rem;
+  position: relative;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+}
+
+.container ul li:before {
+  content: "✽";
+  padding: 0.6rem;
+  font-size: 1.3rem;
+  color: #1f1b1b;
+}
+
+.container ul li:hover:after {
+  content: " (terminé)";
+  font-size: 1.1rem;
+  color: #1f1b1b;
+  font-style: italic;
+  -webkit-animation: pseudoClassAnim 1s forwards;
+          animation: pseudoClassAnim 1s forwards;
+}
+
+.container ul li.checked:before {
+  content: "✔";
+  padding: 10px 10px;
+  font-size: 1.1rem;
+  color: #1f1b1b;
+}
+
+.container ul li.checked:hover:after {
+  content: " (supprimer)";
+  font-size: 1.1rem;
+  color: #1f1b1b;
+}
+
+@-webkit-keyframes pseudoClassAnim {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pseudoClassAnim {
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
